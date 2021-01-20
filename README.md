@@ -120,3 +120,20 @@ cv2.destroyAllWindows()
 ![image](https://user-images.githubusercontent.com/72584581/105162301-49517900-5ac7-11eb-8747-b8aab7e41a6f.png) 
 ![image](https://user-images.githubusercontent.com/72584581/105162434-7867ea80-5ac7-11eb-977b-9cd54f549bce.png)
 ![image](https://user-images.githubusercontent.com/72584581/105162554-a0efe480-5ac7-11eb-8b19-e5d0acbff4b2.png)
+![image](https://user-images.githubusercontent.com/72584581/105162743-dd234500-5ac7-11eb-9cbc-dd7c01d2c914.png)
+
+## 6.Develop a program to create an image from 2D array.
+np.linspace() - is an in-built function in Python's NumPy library. It is used to create an evenly spaced sequence in a specified interval. Image.fromarray() - This function converts a numerical (integer or float) numpy array of any size and dimensionality into a CASA image. np.reshape() - function shapes an array without changing data of array.
+### code
+import numpy as np
+from PIL import Image
+import cv2 as c 
+array = np.zeros([100, 200, 3], dtype=np.uint8)
+array[:,:100] = [150, 128, 0]
+array[:,100:] = [0, 0, 255]   
+img = Image.fromarray(array)
+img.save('nature.jpg')
+img.show()
+c.waitKey(0)
+
+**output**
