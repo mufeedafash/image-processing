@@ -36,4 +36,18 @@ c.waitKey(0)
 
 ## Rotation
 Images can be rotated to any degree clockwise or otherwise. We just need to define rotation matrix listing rotation point, degree of rotation and the scaling factor.
+### code
+import cv2 
+import numpy as np 
+img = cv2.imread('nature.jpg') 
+(rows, cols) = img.shape[:2] 
+M = cv2.getRotationMatrix2D((cols / 2, rows / 2), 120, 1) 
+res = cv2.warpAffine(img, M, (cols, rows)) 
+cv2.imshow('image', img)
+cv2.waitKey(0) 
+cv2.imshow('result',res) 
+cv2.waitKey(0) 
+cv2.destroyAllWindows()
+
+**output**
 
