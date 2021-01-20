@@ -30,3 +30,6 @@ nimg=c.resize(img,(0,0),fx=0.50,fy=0.50)
 c.imshow("Result",nimg)
 c.waitKey(0)
 
+**output**
+
+
