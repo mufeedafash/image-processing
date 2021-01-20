@@ -139,7 +139,7 @@ c.waitKey(0)
 **output**
 ![image](https://user-images.githubusercontent.com/72584581/105163313-9c77fb80-5ac8-11eb-9423-a924c187c73b.png)
 
-7.program to find the neighbor of matrix.
+## 7.program to find the neighbor of matrix.
 
 X = [[1,2,3], [4 ,5,6], [7 ,8,9]] Y = [[9,8,7], [6,5,4], [3,2,1]] result = [[0,0,0], [0,0,0], [0,0,0]] for i in range(len(X)):
 for j in range(len(Y)): result[i][j] = X[i][j] + Y[i][j] print("Resultant array:") for r in result: print(r) def neighbors(radius, rowNumber, columnNumber): return [[result[i][j] if i >= 0 and i < len(result) and j >= 0 and j < len(result[0]) else 0 for j in range(columnNumber-1-radius, columnNumber+radius)] for i in range(rowNumber-1-radius, rowNumber+radius)] neighbors(4,2,2)
@@ -152,7 +152,7 @@ for j in range(max(0,y-1),y+2): try: t = M[i][j] l.append(t) except IndexError: 
 
 Output: image
 
-Operator Overloading in C++:Assignment operator of 2 Matrix.
+## 8.Operator Overloading in C++:Assignment operator of 2 Matrix.
 
 C++ has the ability to provide the operators with a special meaning for a data type, this ability is known as operator overloading. Assignment operator - are used to assigning value to a variable. #include int findSum(int n) { // Generate matrix int a[100][100],b[100][100]; for (int i = 0; i < n; i++) for (int j = 0; j < n; j++) std::cin>>a[i][j] ; for (int i = 0; i < n; i++) for (int j = 0; j < n; j++) b[i][j]=a[i][j]; // Compute sum int sum = 0; for (int i = 0; i < n; i++) for (int j = 0; j < n; j++) sum += b[i][j]; std::cout <<"sum of elements: ";
 
