@@ -13,6 +13,5 @@ numpy_horizontal = np.hstack((image, grey_3_channel))
 numpy_horizontal_concat = np.concatenate((image, grey_3_channel), axis=1)
 cv2.imshow(&#39;cat&#39;, numpy_horizontal_concat)
 cv2.waitKey()
-
-### output
-
+** output**
+![image](https://user-images.githubusercontent.com/72584581/105153465-523d4d00-5abd-11eb-911d-3f3b8b7b8da8.png)
