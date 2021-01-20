@@ -1,7 +1,7 @@
 # image-processing
 
 ## 1.Develop a program to display grayscale image using read and write operation.
-Grayscale
+## Grayscale
 Grayscale is a range of monochromatic shades from black to white. Therefore, a grayscale image contains only shades of gray and no color.Grayscale is a range of shades of gray without apparent color. The darkest possible shade is black, which is the total absence of transmitted or reflected light.
 
 ### code
@@ -21,3 +21,12 @@ cv2.waitKey()
 
 ## 2. Develop a program to perform linear transformation on image. (Scaling and rotation)
 ## Scaling
+In computer graphics and digital imaging, image scaling refers to the resizing of a digital image.
+### code
+import cv2 as c
+img=c.imread("img3.jpg")
+c.imshow('image',img)
+nimg=c.resize(img,(0,0),fx=0.50,fy=0.50)
+c.imshow("Result",nimg)
+c.waitKey(0)
+
