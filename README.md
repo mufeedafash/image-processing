@@ -55,10 +55,28 @@ cv2.destroyAllWindows()
 
 ## 3. Develop a program to find sum and mean of a set of images.
 Create n number of images and read the directory and perform operation.
+
+os.listdir() - returns a list containing the names of the entries in the directory given by path. sum - add a constant value to an image. mean - will give you an idea of what pixel color to choose to summarize the color of the complete image.
 ### code
+import cv2
+import os
+path = "F:\image"
+imgs=[]
+dirs=os.listdir(path)
+for file in dirs:
+    fpat=path+"\\"+file
+    imgs.append(cv2.imread(fpat))
+i=0
+for im in imgs:
+    i=i+1
+print(i)
+cv2.imshow('sum',len(im))
+cv2.imshow('mean',len(im)/im)
+cv2.waitKey(0)
+
 
 **output**
 ![image](https://user-images.githubusercontent.com/72584581/105160530-32aa2280-5ac5-11eb-8973-e1a787c845aa.png)
-
+![image](https://user-images.githubusercontent.com/72584581/105160714-6be29280-5ac5-11eb-8081-2d7ff1836e3d.png)
 
 
