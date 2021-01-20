@@ -18,3 +18,6 @@ cv2.waitKey()
 
 **output**
 ![image](https://user-images.githubusercontent.com/72584581/105153465-523d4d00-5abd-11eb-911d-3f3b8b7b8da8.png)
+
+## 2. Develop a program to perform linear transformation on image. (Scaling and rotation)
+## Scaling
