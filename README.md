@@ -144,7 +144,7 @@ c.waitKey(0)
 X = [[1,2,3], [4 ,5,6], [7 ,8,9]] Y = [[9,8,7], [6,5,4], [3,2,1]] result = [[0,0,0], [0,0,0], [0,0,0]] for i in range(len(X)):
 for j in range(len(Y)): result[i][j] = X[i][j] + Y[i][j] print("Resultant array:") for r in result: print(r) def neighbors(radius, rowNumber, columnNumber): return [[result[i][j] if i >= 0 and i < len(result) and j >= 0 and j < len(result[0]) else 0 for j in range(columnNumber-1-radius, columnNumber+radius)] for i in range(rowNumber-1-radius, rowNumber+radius)] neighbors(4,2,2)
 
-OUTPUT: image
+OUTPUT: ![image](https://user-images.githubusercontent.com/72584581/105164697-4a37da00-5aca-11eb-913d-35e1f77f6315.png)
 
 Program to find the Sum of neighbour value of Matrix.
 import numpy as np M = [[1, 2, 3], [4, 5, 6], [7, 8, 9]] M = np.asarray(M) N = np.zeros(M.shape) def sumNeighbors(M,x,y): l = [] for i in range(max(0,x-1),x+2):
