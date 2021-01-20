@@ -32,5 +32,5 @@ c.waitKey(0)
 
 **output**
 ![image](https://user-images.githubusercontent.com/72584581/105157710-19ec3d80-5ac2-11eb-8832-9774043a988d.png)
-
+![image](https://user-images.githubusercontent.com/72584581/105157890-44d69180-5ac2-11eb-8b6b-e3f005908190.png)
 
