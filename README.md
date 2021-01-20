@@ -137,3 +137,30 @@ img.show()
 c.waitKey(0)
 
 **output**
+![image](https://user-images.githubusercontent.com/72584581/105163313-9c77fb80-5ac8-11eb-9423-a924c187c73b.png)
+
+7.program to find the neighbor of matrix.
+
+X = [[1,2,3], [4 ,5,6], [7 ,8,9]] Y = [[9,8,7], [6,5,4], [3,2,1]] result = [[0,0,0], [0,0,0], [0,0,0]] for i in range(len(X)):
+for j in range(len(Y)): result[i][j] = X[i][j] + Y[i][j] print("Resultant array:") for r in result: print(r) def neighbors(radius, rowNumber, columnNumber): return [[result[i][j] if i >= 0 and i < len(result) and j >= 0 and j < len(result[0]) else 0 for j in range(columnNumber-1-radius, columnNumber+radius)] for i in range(rowNumber-1-radius, rowNumber+radius)] neighbors(4,2,2)
+
+OUTPUT: image
+
+Program to find the Sum of neighbour value of Matrix.
+import numpy as np M = [[1, 2, 3], [4, 5, 6], [7, 8, 9]] M = np.asarray(M) N = np.zeros(M.shape) def sumNeighbors(M,x,y): l = [] for i in range(max(0,x-1),x+2):
+for j in range(max(0,y-1),y+2): try: t = M[i][j] l.append(t) except IndexError: pass return sum(l)-M[x][y] for i in range(M.shape[0]): for j in range(M.shape[1]): N[i][j] = sumNeighbors(M, i, j) print ("Original matrix:\n", M) print ("Summed neighbors matrix:\n", N)
+
+Output: image
+
+Operator Overloading in C++:Assignment operator of 2 Matrix.
+
+C++ has the ability to provide the operators with a special meaning for a data type, this ability is known as operator overloading. Assignment operator - are used to assigning value to a variable. #include int findSum(int n) { // Generate matrix int a[100][100],b[100][100]; for (int i = 0; i < n; i++) for (int j = 0; j < n; j++) std::cin>>a[i][j] ; for (int i = 0; i < n; i++) for (int j = 0; j < n; j++) b[i][j]=a[i][j]; // Compute sum int sum = 0; for (int i = 0; i < n; i++) for (int j = 0; j < n; j++) sum += b[i][j]; std::cout <<"sum of elements: ";
+
+return sum; } int main() { int n = 3; std::cout << findSum(n) ; return 0;
+
+}
+
+Ouput: image
+
+Describe: (i) Anaconda : Anaconda is a distribution of the Python and R programming languages for scientific computing , that aims to simplify package management and deployment. The distribution includes data-science packages suitable for Windows, Linux, and macOS. Anaconda is popular because it brings many of the tools used in data science and machine learning with just one install, so it's great for having short and simple setup. Like Virtualenv, Anaconda also uses the concept of creating environments so as to isolate different libraries and versions. (ii)Spyder : Spyder is an open source cross-platform integrated development environment (IDE) for scientific programming in the Python language. Spyder integrates with a number of prominent packages in the scientific Python stack, including NumPy, SciPy, Matplotlib, pandas, IPython, SymPy and Cython, as well as other open source software. Spyder, the Scientific Python Development Environment, is a free integrated development environment (IDE) that is included with Anaconda. It includes editing, interactive testing, debugging, and introspection features. ... Spyder is also pre-installed in Anaconda Navigator, which is included in Anaconda. (iii)Jupiter : The Jupyter Notebook application allows you to create and edit documents that display the input and output of a Python or R language script. Once saved, you can share these files with others. NOTE: Python and R language are included by default, but with customization, Notebook can run several other kernel environments.
+
