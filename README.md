@@ -55,6 +55,10 @@ cv2.destroyAllWindows()
 
 ## 3. Develop a program to find sum and mean of a set of images.
 Create n number of images and read the directory and perform operation.
+### code
+
+**output**
+![image](https://user-images.githubusercontent.com/72584581/105160530-32aa2280-5ac5-11eb-8973-e1a787c845aa.png)
 
 
 
