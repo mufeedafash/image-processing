@@ -92,5 +92,29 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 **output**
 ![image](https://user-images.githubusercontent.com/72584581/105161421-37bba180-5ac6-11eb-9680-131a7b4d5211.png)
+![image](https://user-images.githubusercontent.com/72584581/105161544-57eb6080-5ac6-11eb-878d-4a5ff64e45c3.png)
+
+## 5.Develop a program to convert color image into different color space.
+Color Space - is a specific organization of colors.
+###code
+import cv2
+image=cv2.imread("nature.jpg")
+cv2.imshow("old",image)
+cv2.waitKey()
+hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
+cv2.imshow("HSV",hsv)
+cv2.waitKey(0)
+lab = cv2.cvtColor(image, cv2.COLOR_BGR2LAB)
+cv2.imshow("LAB",lab)
+cv2.waitKey(0)
+hls = cv2.cvtColor(image, cv2.COLOR_BGR2HLS)
+cv2.imshow("HLS",hls)
+cv2.waitKey(0)
+yuv = cv2.cvtColor(image, cv2.COLOR_BGR2YUV)
+cv2.imshow("YUV",yuv)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+**output**
 
   
