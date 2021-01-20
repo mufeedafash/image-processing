@@ -1,7 +1,9 @@
 # image-processing
+
 ## 1.Develop a program to display grayscale image using read and write operation.
 Grayscale
 Grayscale is a range of monochromatic shades from black to white. Therefore, a grayscale image contains only shades of gray and no color.Grayscale is a range of shades of gray without apparent color. The darkest possible shade is black, which is the total absence of transmitted or reflected light.
+
 ### code
 import cv2
 import numpy as np
@@ -13,5 +15,6 @@ numpy_horizontal = np.hstack((image, grey_3_channel))
 numpy_horizontal_concat = np.concatenate((image, grey_3_channel), axis=1)
 cv2.imshow(&#39;cat&#39;, numpy_horizontal_concat)
 cv2.waitKey()
+
 **output**
 ![image](https://user-images.githubusercontent.com/72584581/105153465-523d4d00-5abd-11eb-911d-3f3b8b7b8da8.png)
