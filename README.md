@@ -74,9 +74,23 @@ cv2.imshow('sum',len(im))
 cv2.imshow('mean',len(im)/im)
 cv2.waitKey(0)
 
-
 **output**
 ![image](https://user-images.githubusercontent.com/72584581/105160530-32aa2280-5ac5-11eb-8973-e1a787c845aa.png)
 ![image](https://user-images.githubusercontent.com/72584581/105160714-6be29280-5ac5-11eb-8081-2d7ff1836e3d.png)
 
+## 4.Convert color image to Gray scale and binary image
+##Gray scale image 
+  Gray scale is simply one in which the only colors are shades of gray. binary image - is one that consists of pixels that can have one of exactly two colors, usually black and white. cv2.threshold() - is the assignment of pixel values in relation to the threshold value provided.
+### code
+import cv2
+image=cv2.imread("cat.jpg")
+gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+(tresh,blackAndWhiteImage)=cv2.threshold(gray,127,255,cv2.THRESH_BINARY)
+cv2.imshow("gray",gray)
+cv2.imshow("BINARY",blackAndWhiteImage)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+**output**
 
+
+  
