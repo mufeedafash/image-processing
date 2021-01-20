@@ -150,9 +150,9 @@ OUTPUT: ![image](https://user-images.githubusercontent.com/72584581/105164697-4a
 import numpy as np M = [[1, 2, 3], [4, 5, 6], [7, 8, 9]] M = np.asarray(M) N = np.zeros(M.shape) def sumNeighbors(M,x,y): l = [] for i in range(max(0,x-1),x+2):
 for j in range(max(0,y-1),y+2): try: t = M[i][j] l.append(t) except IndexError: pass return sum(l)-M[x][y] for i in range(M.shape[0]): for j in range(M.shape[1]): N[i][j] = sumNeighbors(M, i, j) print ("Original matrix:\n", M) print ("Summed neighbors matrix:\n", N)
 
-Output: 
+Output: ![image](https://user-images.githubusercontent.com/72584581/105164960-997e0a80-5aca-11eb-9343-cb5f2d38e1e0.png)
 
-## 8.Operator Overloading in C++:Assignment operator of 2 Matrix.
+## 9.Operator Overloading in C++:Assignment operator of 2 Matrix.
 
 C++ has the ability to provide the operators with a special meaning for a data type, this ability is known as operator overloading. Assignment operator - are used to assigning value to a variable. #include int findSum(int n) { // Generate matrix int a[100][100],b[100][100]; for (int i = 0; i < n; i++) for (int j = 0; j < n; j++) std::cin>>a[i][j] ; for (int i = 0; i < n; i++) for (int j = 0; j < n; j++) b[i][j]=a[i][j]; // Compute sum int sum = 0; for (int i = 0; i < n; i++) for (int j = 0; j < n; j++) sum += b[i][j]; std::cout <<"sum of elements: ";
 
