@@ -79,7 +79,7 @@ cv2.waitKey(0)
 ![image](https://user-images.githubusercontent.com/72584581/105160714-6be29280-5ac5-11eb-8081-2d7ff1836e3d.png)
 
 ## 4.Convert color image to Gray scale and binary image
-##Gray scale image 
+## Gray scale image 
   Gray scale is simply one in which the only colors are shades of gray. binary image - is one that consists of pixels that can have one of exactly two colors, usually black and white. cv2.threshold() - is the assignment of pixel values in relation to the threshold value provided.
 ### code
 import cv2
@@ -164,6 +164,10 @@ Describe: (i) Anaconda : Anaconda is a distribution of the Python and R programm
 
 ## 10.Develop a program to implement a negative transformation of an image.
 
+## negative transformation
+Image inversion or Image negation helps finding the details from the darker regions of the image.
+When an image is inverted, each of its pixel value ‘r’ is subtracted from the maximum pixel value L-1 and the original pixel is replaced with the result ‘s’.
+
 ### code
 import cv2
 import numpy as np
@@ -177,3 +181,9 @@ cv2.destroyAllWindows()
 **output**
 ![image](https://user-images.githubusercontent.com/72584581/105328450-0e6e4480-5b9e-11eb-83f9-b5a956a40530.png)
 ![image](https://user-images.githubusercontent.com/72584581/105328589-32318a80-5b9e-11eb-812d-38a8359ab338.png)
+
+## 11.Develop a program to implement contrast transformation.
+## Contrast enhancement 
+ change the image value change the image value distribution to cover a wide range
+ Low contrast - image values concentrated near a narrow range (mostly dark, or mostly bright, or mostly medium values)
+### code
