@@ -96,7 +96,7 @@ cv2.destroyAllWindows()
 
 ## 5.Develop a program to convert color image into different color space.
 Color Space - is a specific organization of colors.
-###code
+### code
 import cv2
 image=cv2.imread("nature.jpg")
 cv2.imshow("old",image)
@@ -155,12 +155,9 @@ Output: ![image](https://user-images.githubusercontent.com/72584581/105164960-99
 ## 9.Operator Overloading in C++:Assignment operator of 2 Matrix.
 
 C++ has the ability to provide the operators with a special meaning for a data type, this ability is known as operator overloading. Assignment operator - are used to assigning value to a variable. #include int findSum(int n) { // Generate matrix int a[100][100],b[100][100]; for (int i = 0; i < n; i++) for (int j = 0; j < n; j++) std::cin>>a[i][j] ; for (int i = 0; i < n; i++) for (int j = 0; j < n; j++) b[i][j]=a[i][j]; // Compute sum int sum = 0; for (int i = 0; i < n; i++) for (int j = 0; j < n; j++) sum += b[i][j]; std::cout <<"sum of elements: ";
+return sum; } int main() { int n = 3; std::cout << findSum(n) ; return 0; }
 
-return sum; } int main() { int n = 3; std::cout << findSum(n) ; return 0;
-
-}
-
-Ouput: ![image](https://user-images.githubusercontent.com/72584581/105165366-1c06ca00-5acb-11eb-9287-1fc5d6e886fa.png)
+Output: ![image](https://user-images.githubusercontent.com/72584581/105165366-1c06ca00-5acb-11eb-9287-1fc5d6e886fa.png)
 
 
 Describe: (i) Anaconda : Anaconda is a distribution of the Python and R programming languages for scientific computing , that aims to simplify package management and deployment. The distribution includes data-science packages suitable for Windows, Linux, and macOS. Anaconda is popular because it brings many of the tools used in data science and machine learning with just one install, so it's great for having short and simple setup. Like Virtualenv, Anaconda also uses the concept of creating environments so as to isolate different libraries and versions. (ii)Spyder : Spyder is an open source cross-platform integrated development environment (IDE) for scientific programming in the Python language. Spyder integrates with a number of prominent packages in the scientific Python stack, including NumPy, SciPy, Matplotlib, pandas, IPython, SymPy and Cython, as well as other open source software. Spyder, the Scientific Python Development Environment, is a free integrated development environment (IDE) that is included with Anaconda. It includes editing, interactive testing, debugging, and introspection features. ... Spyder is also pre-installed in Anaconda Navigator, which is included in Anaconda. (iii)Jupiter : The Jupyter Notebook application allows you to create and edit documents that display the input and output of a Python or R language script. Once saved, you can share these files with others. NOTE: Python and R language are included by default, but with customization, Notebook can run several other kernel environments.
