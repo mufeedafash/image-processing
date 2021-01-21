@@ -186,4 +186,14 @@ cv2.destroyAllWindows()
 ## Contrast enhancement 
  change the image value change the image value distribution to cover a wide range
  Low contrast - image values concentrated near a narrow range (mostly dark, or mostly bright, or mostly medium values)
+ 
 ### code
+from PIL import Image, ImageEnhance
+img = Image.open("tree.jpg")
+img.show()
+img=ImageEnhance.Color(img)
+img.enhance(2.0).show() 
+
+**output**
+![image](https://user-images.githubusercontent.com/72584581/105330741-a53c0080-5ba0-11eb-8f81-d069bca6f929.png)
+![image](https://user-images.githubusercontent.com/72584581/105330778-ad943b80-5ba0-11eb-96d6-c8f001074d9d.png)
