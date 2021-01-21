@@ -28,7 +28,7 @@ img=c.imread("img3.jpg")
 c.imshow('image',img)
 nimg=c.resize(img,(0,0),fx=0.50,fy=0.50)
 c.imshow("Result",nimg)
-c.waitKey(0)
+c.waitKey(0) 
 
 **output**
 ![image](https://user-images.githubusercontent.com/72584581/105157710-19ec3d80-5ac2-11eb-8832-9774043a988d.png)
