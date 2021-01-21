@@ -197,3 +197,27 @@ img.enhance(2.0).show()
 **output**
 ![image](https://user-images.githubusercontent.com/72584581/105331266-41660780-5ba1-11eb-98b1-89133529f14e.png)
 ![image](https://user-images.githubusercontent.com/72584581/105331477-80945880-5ba1-11eb-9989-ddbef64d6d87.png)
+
+## 12.Threshold transformation.
+Thresholding is a type of image segmentation, where we change the pixels of an image to make the image easier to analyze. In thresholding, we convert an image from color or grayscale into a binary image, i.e., one that is simply black and white.
+
+### code
+import cv2  
+import numpy as np
+image = cv2.imread('lion.jpg')
+img = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+ret, thresh1 = cv2.threshold(img, 120, 255, cv2.THRESH_BINARY)
+ret, thresh2 = cv2.threshold(img, 120, 255, cv2.THRESH_BINARY_INV)
+ret, thresh3 = cv2.threshold(img, 120, 255, cv2.THRESH_TRUNC)
+ret, thresh4 = cv2.threshold(img, 120, 255, cv2.THRESH_TOZERO)
+ret, thresh5 = cv2.threshold(img, 120, 255, cv2.THRESH_TOZERO_INV)
+cv2.imshow('Binary Threshold', thresh1)
+cv2.imshow('Binary Threshold Inverted', thresh2)
+cv2.imshow('Truncated Threshold', thresh3)
+cv2.imshow('Set to 0', thresh4)
+cv2.imshow('Set to 0 Inverted', thresh5)
+cv2.waitKey(0)
+cv2.destroyAllWindows() 
+
+**output**
+
