@@ -243,13 +243,12 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 **output**
-![image](https://user-images.githubusercontent.com/72584581/105334713-32815400-5ba5-11eb-9a10-b50318f2f356.png)
-![image](https://user-images.githubusercontent.com/72584581/105334778-4331ca00-5ba5-11eb-99cb-2af7695bcde5.png)
-![image](https://user-images.githubusercontent.com/72584581/105334823-4fb62280-5ba5-11eb-99c6-20b38696e4bd.png)
-![image](https://user-images.githubusercontent.com/72584581/105334853-580e5d80-5ba5-11eb-9377-585572a0d1a7.png)
-![image](https://user-images.githubusercontent.com/72584581/105334871-5e043e80-5ba5-11eb-9b66-597cf2392827.png)
 
 ![image](https://user-images.githubusercontent.com/72584581/105335953-aa9c4980-5ba6-11eb-9164-3119f51b4e3e.png)
+![image](https://user-images.githubusercontent.com/72584581/105336107-d7506100-5ba6-11eb-8af3-138d00389a19.png)
+![image](https://user-images.githubusercontent.com/72584581/105336132-df100580-5ba6-11eb-9b85-d6efcf360df2.png)
+![image](https://user-images.githubusercontent.com/72584581/105336149-e59e7d00-5ba6-11eb-9e28-264dcc3168a0.png)
+![image](https://user-images.githubusercontent.com/72584581/105336164-eafbc780-5ba6-11eb-9a8a-af6217f40c3f.png)
 
 
 
